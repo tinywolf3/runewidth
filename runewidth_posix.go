@@ -52,7 +52,7 @@ func isEastAsian(locale string) bool {
 	}
 	if max > 1 && (charset[0] != 'u' ||
 		strings.HasPrefix(locale, "ja") ||
-		strings.HasPrefix(locale, "ko") ||
+		// strings.HasPrefix(locale, "ko") ||
 		strings.HasPrefix(locale, "zh")) {
 		return true
 	}
